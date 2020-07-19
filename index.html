@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 </head>
 
 <body>
@@ -46,7 +47,7 @@
                 </li>
 
                 <li>
-                    <a href="#">Opiniones y/o Comentarios</a>
+                    <a href="http://127.0.0.1:5500/index.html">Opiniones y/o Comentarios</a>
                 </li>
 
                 <li>
@@ -68,7 +69,7 @@
         <header class="showcase">
             <div style="text-align:center;padding:1em 0;background-color:rgba(208, 205, 255, 0.144); ">
 
-                <h1>CIUDADANIA, DESCENTRALIZACION, SALUD Y DESARROLLO ECONOMICO</h1>
+                <h2>Ynes Trujillo Vidal</h2>
                 <strong><p>Estos son nuestros principios políticos, que buscan hacer aún mas grande nuestra patria el siglo XXI</p></strong>
                 <a href="http://api.whatsapp.com/send?phone=51927766088 text= Buen dia!Por favor, cuando me podría reunir con usted para apoyar su campaña" class="btn" onclick="alert('Buen día!Por favor, dejame un mensaje en el whatsapp para cualquier donación.')">
         Donaciones<i class="fa fa-whatsapps my-float" ></i>
@@ -308,6 +309,28 @@
         <!-- Scroll Reveal -->
         <script src="https://unpkg.com/scrollreveal"></script>
         <script src="main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+        <script>
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": {
+                        "background": "#eaf7f7",
+                        "text": "#5c7291"
+                    },
+                    "button": {
+                        "background": "#56cbdb",
+                        "text": "#ffffff"
+                    }
+                },
+                "showLink": false,
+                "theme": "classic",
+                "position": "bottom-left",
+                "content": {
+                    "message": "Te damos la bienvenida a nuestra pagina, donde te iremos informando acerca de todas nuestras campañas sociales y  proselitistas",
+                    "dismiss": "¡MUCHAS BENDICIONES!"
+                }
+            });
+        </script>
 </body>
 
 </html>
